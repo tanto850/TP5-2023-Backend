@@ -6,11 +6,6 @@ productoCtrl.getProductos = async (req, res) => {
     res.json(productos);
 }
 
-//productoCtrl.getProductos = async (req, res) => {
-//    var productos = await Producto.find({}).populate("responsable");
-//    res.json(productos);
-//}
-
 productoCtrl.createProducto = async (req, res) => {
     var producto = new Producto(req.body);
     try {

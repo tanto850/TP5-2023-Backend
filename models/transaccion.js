@@ -5,7 +5,7 @@ const TransaccionSchema = new Schema({
     cantidadOrigen: {type: Number, required: true},
     monedaDestino: {type: String, required: true},
     cantidadDestino: {type: Number, required:true},
-    emailCliente: {type: Number, required:true},
-    tasaConversion: {type: String, required: true}
+    emailCliente: {type: String, required:true},
+    tasaConversion: {type: String, required: true} 
 })
 module.exports = mongoose.models.Transaccion || mongoose.model('Transaccion', TransaccionSchema);
