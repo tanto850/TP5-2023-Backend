@@ -1,5 +1,5 @@
 //defino controlador para el manejo de CRUD
-const espectadorCtrl = require('../controllers/espectador.controller');
+const espectadorCtrl = require('./../controllers/espectador.controller');
 //creamos el manejador de rutas
 const express = require('express');
 const router = express.Router();
@@ -7,7 +7,5 @@ const router = express.Router();
 router.get('/', espectadorCtrl.getEspectadores);
 router.post('/', espectadorCtrl.createEspectador);
 router.get('/:id', espectadorCtrl.getEspectador);
-router.put('/:id', espectadorCtrl.editEspectador);
-router.delete('/:id', espectadorCtrl.deleteEspectador);
 //exportamos el modulo de rutas
 module.exports = router;
