@@ -1,5 +1,5 @@
 //defino controlador para el manejo de CRUD
-const espectadorCtrl = require('../controllers/espectador.controller');
+const espectadorCtrl = require('./../controllers/espectador.controller');
 //creamos el manejador de rutas
 const express = require('express');
 const router = express.Router();
