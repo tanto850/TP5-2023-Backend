@@ -7,7 +7,7 @@ const router = express.Router();
 router.get('/', espectadorCtrl.getEspectadores);
 router.post('/', espectadorCtrl.createEspectador);
 router.get('/:id', espectadorCtrl.getEspectador);
-router.put('/:id', espectadorCtrl.editEspectador);
-router.delete('/:id', espectadorCtrl.deleteEspectador);
+// router.put('/:id', espectadorCtrl.editEspectador);
+// router.delete('/:id', espectadorCtrl.deleteEspectador);
 //exportamos el modulo de rutas
 module.exports = router;

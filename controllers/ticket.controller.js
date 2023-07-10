@@ -1,4 +1,3 @@
-const Espectador = require('../models/espectador');
 const Ticket = require('../models/ticket');
 const ticketCtrl = {}
 
@@ -58,7 +57,7 @@ ticketCtrl.deleteTicket = async (req, res)=>{
 }
 
 ticketCtrl.getEspectadores = async (req, res) => {
-    var tickets      = await Tickets.find();
+    var tickets      = await Tickets.find().populate('espectadores');
     var espectadores = {};
 
     tickets.forEach(t => {

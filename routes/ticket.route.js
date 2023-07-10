@@ -9,7 +9,7 @@ router.post('/', ticketCtrl.createTicket);
 router.get('/:id', ticketCtrl.getTicket);
 router.put('/:id', ticketCtrl.editTicket);
 router.delete('/:id', ticketCtrl.deleteTicket);
-//router.get('/:id', ticketCtrl.getEspectadores);
-//router.get('/destacados', ticketCtrl.getProductosDestacados);
+// router.get('/:id', ticketCtrl.getEspectadores);
+// router.get('/destacados', ticketCtrl.getProductosDestacados);
 //exportamos el modulo de rutas
 module.exports = router;
